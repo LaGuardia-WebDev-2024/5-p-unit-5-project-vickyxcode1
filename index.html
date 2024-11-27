@@ -1,32 +1,325 @@
-<!-- Unit 5 Project
+<!--
 Requirements
-[  ] <div> and <span>
-[  ] height: and width:
-[  ] margin: and padding: 
+[  ] Two External Links
+[  ] Table
+[  ] Three CSS Rules
 [  ] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Flexbox
-[ no ] Feature 2 - Flip Card
-[ no ] Feature 3 - Navbar
-[ no ] Feature 4 - Shaking Animation
-[ no ] Feature 5 - Gradient Background
-[ no ] Feature 6 - Spotify Playlist
+[ no ] Feature 1 - Include a :hover feature
+[ no ] Feature 2 - Include at least two Internal links
+[ no ] Feature 3 - Include a list in a tabl
+[ no ] Feature 4 - Include at least two background images in a table
+-->
+
+<!--Unit 4 Project
+Requirements
+[ ] Google Font OR Uploaded Font
+[ ] font-size OR font-style 
+[ ] Five CSS Rules
+[ ] Three Images
+
+Select ONE Additional Feature to Add  
+[ no ] Feature 1 - Include a Static Background Image
+[ no ] Feature 2 - Use a unique border-radius
+[ no ] Feature 3 - Use width and margin CSS Properties
+[ no ] Feature 4 - Include at least one more additional HTML page
 -->
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barrio&display=swap"
+      rel="stylesheet"
+    />
+    <title>Project: Recipe book</title>
+    <meta charset="utf-8" />
+    <style>
+      h2:hover {
+        background-color: blue;
+      }
+      h1 {
+        color: rgb(158 218 255);
+        text-align: center;
+        font-family: "Barrio", system-ui;
+      }
+      body {
+        background-color: rgb(75, 158, 210);
+        text-align: center;
+      }
+      p {
+        color: white;
+      }
 
-<head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
+      table,
+      th,
+      td {
+        border: 1px solid;
+      }
+      h2 {
+        font-style: italic;
+      }
+      img {
+        border-radius: 30px 10px;
+      }
+      .vogue-card {
+        background-color: black;
+        width: 330px;
+        height: 400px;
+        perspective: 1000px;
+        border-radius: 30px 10px;
+      }
 
-  </style>
-</head>
-<body>
+      .vogue-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 30px 10px;
+      }
 
- 
+      .vogue-card:hover .vogue-card-inner {
+        transform: rotateY(180deg);
+        border-radius: 30px 10px;
+      }
 
-</body>
+      .vogue-card-front,
+      .vogue-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 30px 10px;
+      }
+
+      .vogue-card-front {
+        background-color: Transparent;
+        color: black;
+      }
+
+      .vogue-card-back {
+        background-color: Transparent;
+        color: white;
+        transform: rotateY(180deg);
+      }
+      .vesh-card {
+        background-color: #08302d;
+        width: 330px;
+        height: 460px;
+        perspective: 1000px;
+        border-radius: 30px 10px;
+      }
+
+      .vesh-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 30px 10px;
+      }
+
+      .vesh-card:hover .vesh-card-inner {
+        transform: rotateY(180deg);
+        border-radius: 30px 10px;
+      }
+
+      .vesh-card-front,
+      .vesh-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 30px 10px;
+      }
+
+      .vesh-card-front {
+        background-color: Transparent;
+        color: black;
+      }
+
+      .vesh-card-back {
+        background-color: Transparent;
+        color: white;
+        transform: rotateY(180deg);
+      }
+      .hood-card {
+        background-color: #6b5766;
+        width: 380px;
+        height: 380px;
+        perspective: 1000px;
+        border-radius: 30px 10px;
+      }
+
+      .hood-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 30px 10px;
+      }
+
+      .hood-card:hover .hood-card-inner {
+        transform: rotateY(180deg);
+        border-radius: 30px 10px;
+      }
+
+      .hood-card-front,
+      .hood-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 30px 10px;
+      }
+
+      .hood-card-front {
+        background-color: Transparent;
+        color: black;
+      }
+
+      .hood-card-back {
+        background-color: Transparent;
+        color: white;
+        transform: rotateY(180deg);
+      }
+      .line {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+   <center>
+      <h1>Victoria's Commission Corner</h1>
+      <hr size="5" color="white" />
+      <br />
+      <p>Style Examples:</p>
+      <div class="line">
+      <div class="vogue-card">
+        <div class="vogue-card-inner">
+          <div class="vogue-card-front">
+            <img
+              src="https://cdn.glitch.global/376dcc7f-e18b-4c5a-8309-78fcde85b07e/vic%20work.PNG?v=1729697316870"
+              style="width: 320px; height: 400px; object-fit: contain"
+            />
+          </div>
+          <div class="vogue-card-back">
+            <h3>VOGUE COVER</h3>
+            <p>Embrace YOU</p>
+          </div>
+        </div>
+      </div>
+        </div>
+
+      <div class="line">
+      <div class="vesh-card">
+        <div class="vesh-card-inner">
+          <div class="vesh-card-front">
+            <img
+              src="https://cdn.glitch.global/376dcc7f-e18b-4c5a-8309-78fcde85b07e/vic%20work%203.JPG?v=1729697301691"
+              style="width: 320px; height: 460px; object-fit: contain"
+            />
+          </div>
+          <div class="vesh-card-back">
+            <h3>VESH NYC</h3>
+            <p>The Swag Wears You</p>
+          </div>
+        </div>
+      </div>
+        </div>
+
+      <div class="line">
+      <div class="hood-card">
+        <div class="hood-card-inner">
+          <div class="hood-card-front">
+            <img
+              src="https://cdn.glitch.global/376dcc7f-e18b-4c5a-8309-78fcde85b07e/vic%20work%202.png?v=1729697308183"
+              style="width: 380px; height: 380px; object-fit: contain"
+            />
+          </div>
+          <div class="hood-card-back">
+            <h3>HOOD RICH</h3>
+            <p>Rather Look Rich</p>
+          </div>
+        </div>
+      </div>
+</div>
+      <hr size="5" color="white" />
+
+      <h2>Price Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Medium</th>
+            <th>Character design</th>
+            <th>Self Portrait</th>
+            <th>Fashion Design</th>
+            <th>Promotional/ Advertisting Graphic Poster</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Digital</td>
+            <td>50-60</td>
+            <td>60-80</td>
+            <td>40-50</td>
+            <td>40-60</td>
+            <tbody>
+              <tr>
+                <td>Acrylic</td>
+                <td>90-120</td>
+                <td>100-140</td>
+                <td>N/A</td>
+                <td>N/A</td>
+              </tr>
+            </tbody>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <td>Pencil/Graphite</td>
+            <td>20-30</td>
+            <td>40-60</td>
+            <td>30-35</td>
+            <td>N/A</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Useful Links</h2>
+      <h3>
+        <a
+          href="https://www.instagram.com/veecky._.drawz?igsh=MTI3bTF5dWN1aXM1dA=="
+        >
+          Art Instagram</a
+        >
+        <br />
+        <a
+          href="https://www.dickblick.com/?srsltid=AfmBOoo0vJxPRmMPwHyA057evxs7vsTodTxqdNh-YCVVBBNxG_aBYbb8"
+          >Art Materials For Commissions</a
+        >
+        <br />
+        <h4>Hope You commission me :)</h4>
+      </h3>
+    </center>
+  </body>
 </html>
